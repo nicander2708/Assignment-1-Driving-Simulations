@@ -3,9 +3,9 @@ acc = int(input('Enter the acceleration of the person:'))
 distance = int(input('Enter the distance traveled:'))
 v1 = 0
 v= v1 + (acc*time)
-d= int(time + 0.5*(acc)*(time**2))
-for x in range (time + 1):
-    d1 = (acc/2)*(x**2)
+d= int(v1*time+ 0.5*(acc)*(time**2))
+for x in range(time+ 1):
+    d1 = (v1*x+(0.5*acc)*(x**2))
     print ('Duration : ',x,'Distance : ', "x"*int(d1/10))
 speed_limit = 60
 if v >= 60:
